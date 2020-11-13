@@ -1,5 +1,6 @@
 package seminariolenguajes2.escenario.modelo;
 
+import java.util.HashSet;
 
 public class Dispositivo {
     
@@ -7,6 +8,7 @@ public class Dispositivo {
     private String descripcion;
     private float latitud;
     private float longitud;
+    public HashSet<Sensor> sensores = new HashSet<Sensor>();
 
     void setIdDispositivo(int id){
         this.idDispositivo = id;
